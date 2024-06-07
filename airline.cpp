@@ -43,7 +43,40 @@ void mainMenu(){
          break;
     }
     
-   }
+    case 2: {
+        cout<<"_____________Book a flight using this system________________\n"<<endl;
+        r.flights();
+        break;
+    }
+    
+    case 3:{ 
+        cout<<"_____________GET YOUR TICKET______\n"<<endl;
+        t.Bill();
+    
+        cout<<"Your ticket is printed, you can collect it \n"<<endl;
+        cout<<"Press 1 to display your ticket ";
+
+        cin>>back;
+
+        if(back==1){
+           t.display();
+           cout<<"Press any key to go back to main menu:";
+           cin>>back;
+
+           if(back==1){
+              mainMenu();
+           }else{
+              mainMenu();
+           }
+        }else{
+            mainMenu();
+        }
+
+        break;
+     
+    }
+   
+}
 }
 
 
