@@ -76,6 +76,15 @@ void mainMenu(){
      
     }
    
+   case 4: {
+      cout<<"\n\n\t_______________ Thank-you ___________________"<<endl;
+      break;
+   }
+
+   default : {
+      cout<<"Invalid input, Please try again!\n"<<endl;
+      mainMenu();
+   }
 }
 }
 
@@ -91,6 +100,33 @@ class Management {
 
 
 };
+
+class Details {
+    public :
+     static string name, gender;
+     int phoneNo;
+     int age;
+     string address;
+     static int cId;
+     char arr[100];
+
+     void information(){
+        cout<<"\nEnter the customer ID:";
+        cin>>cId;
+        cout<<"\nEnter the name:";
+        cin>>name;
+        cout<<"\nEnter the age:";
+        cin>>age;
+        cout<<"\n Address:";
+        cin>>address;
+        cout<<"\n Gender:";
+        cin>>gender;
+        cout<<"Your details are saved with us\n"<<endl;
+     }
+};
+
+
+
 
 int main(){
     
